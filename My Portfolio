@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GOKINTI LOKESWARI</title>
+        <h1>GOKINTI LOKESWARI</h1>
+        <h2>Wellcome to my Portfolia</h2>
+        <h3>Computer Science Engineering</h3>
+        <br>
+        
+        <hr>
+        <h2>Navigation</h2>
+        <p>
+            <a href=":#aboutme">About me</a>|
+            <a href=":#skills">Skills</a>|
+            <a href=":#projects">projects</a>|
+            <a href=":#education">education</a>|
+            <a href=":#contact">contact</a>|
+           </p> 
+           <hr>
+           <h2 id="About me">About me</h2>
+           <p>Hello! I'm Loki a tech enthusiast who believes in smart work and creativity</p>
+           <hr>
+
+           <h2 id="Skills">Skills</h2>
+           <ul>
+            <li>web designing</li>
+            <li>html</li>
+            <li>java</li>
+            <li>python</li>
+           </ul>
+           <hr>
+
+           <h2 id="Projects">Projects</h2>
+           <ol>
+            <li><strong>Smart Health App</strong>-suggest food,tips,and medicine based on health input</li>
+            <li><strong>Quiz app</strong>-based on java i did this for easy quiz and game</li>
+           </ol>
+           <hr>
+
+           <h2 id="education">education</h2>
+           <p>Bachelor of Technology in computer science<br>kuppam engineering college,2025</p>
+           <hr>
+
+           <h2 id="contact">contact</h2>
+           <p>Email-<a href=lokeswarigokinti@gmail.com>lokeswarigokinti@gmail.com</a></p> 
+           <p>Github:<a href="https://github.com/lokeswarigokinti">lokeswarigokinti</a></p>
+           <hr>
+           <p>Thank you visiting my portfolio </p>
+
+
+
+        </div>
+
+        
+    </<head>
+</html>
+

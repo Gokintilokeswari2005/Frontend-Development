@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GOKINTI LOKESWARI - Portfolio</title>
+    <style>
+        
+        body  {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        nav, p {
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #2c3e50;
+        }
+            
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #e67e22;
+        }
+
+        ul, ol {
+            padding-left: 40px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            color: gray;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        .navigation a {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>GOKINTI LOKESWARI</h1>
+        <h2>Welcome to My Portfolio</h2>
+        <h3>Computer Science Engineering Student</h3>
+
+        <img src="loki - CopyJPEG File (.jpeg)" alt="">
+
+        <hr>
+
+        <h2>Navigation</h2>
+        <div class="navigation">
+            <a href="#aboutme">About Me</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#education">Education</a> |
+            <a href="#certificates">Certificates</a> |
+            <a href="#hobbies">Hobbies</a> |
+            <a href="#contact">Contact</a>
+        </div>
+
+        <hr>
+
+        <h2 id="aboutme">About Me</h2>
+        <p>Hello! I'm <strong>Loki</strong>, a passionate tech enthusiast who believes in working smart and thinking creatively. I aim to build smarter technology through innovation and virtual representation.</p>
+        <p><em>I like solving problems, building applications, and learning new tools in the tech world!</em></p>
+
+        <hr>
+
+        <h2 id="skills">Skills</h2>
+        <ul>
+            <li>Web Designing (HTML, CSS basics)</li>
+            <li>Java Programming</li>
+            <li>Python Programming</li>
+            <li>Object-Oriented Programming</li>
+            <li>Problem Solving & Logical Thinking</li>
+        </ul>
+
+        <hr>
+
+        <h2 id="projects">Projects</h2>
+        <ol>
+            <li><strong>Smart Health App:</strong> Suggests food, health tips, and medicine based on user input.</li>
+            <li><strong>Quiz App:</strong> A fun and educational Java-based quiz application.</li>
+        </ol>
+
+        <hr>
+
+        <h2 id="education">Education</h2>
+        <p><strong>Bachelor of Technology</strong> in Computer Science<br>Kuppam Engineering College (Graduating 2026)</p>
+
+        <hr>
+
+        <h2 id="certificates">Certificates</h2>
+        <ul>
+            <li>Symposium certifications</li>
+            <li>Java Programming Certification</li>
+            <li>AI Tools Workshop - Smart Techs Community</li>
+        </ul>
+
+        <hr>
+
+        <h2 id="hobbies">Hobbies</h2>
+        <ul>
+            <li>Exploring new technologies</li>
+            <li>Creative writing and blogging</li>
+            <li>Watching tech documentaries</li>
+            <li>Participating in technical events</li>
+        </ul>
+
+        <hr>
+
+        <h2 id="contact">Contact</h2>
+        <p>Email: <a href="mailto:lokeswarigokinti@gmail.com">lokeswarigokinti@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/lokeswarigokinti" target="_blank">lokeswarigokinti</a></p>
+        <p>LinkedIn: <a href="#">gokinti lokeswari@LinkedIn</a></p>
+
+        <hr>
+
+        <footer>
+            <p><strong>Thank you for visiting my portfolio!</strong></p>
+            <p>Keep exploring. Keep learning. Keep building! </p>
+        </footer>
+
+    </div>
+</body>
+</html>
