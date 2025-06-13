@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Page Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #4b0082;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #blog-title {
+            font-size: 32px;
+        }
+
+        .layout {
+            display: flex;
+            margin: 20px;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #fff;
+            padding: 15px;
+            border-right: 2px solid #ccc;
+        }
+
+        .content {
+            width: 75%;
+            padding: 15px;
+        }
+
+        .article {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 5px solid transparent;
+            transition: 0.3s;
+        }
+
+        .article:hover {
+            background-color: #eef;
+        }
+
+        .article:first-child {
+            border-left: 5px solid #4b0082;
+        }
+
+        .article h2 {
+            color: #4b0082;
+        }
+
+        .read-btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #4b0082;
+            color: white;
+            text-decoration: none;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .read-btn:hover {
+            background-color: #673ab7;
+        }
+
+        footer {
+            background-color: #4b0082;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="blog-title">Purple Vibes Blog</h1>
+    </header>
+
+    <div class="layout">
+        <div class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Tech</a></li>
+                <li><a href="#">Life</a></li>
+                <li><a href="#">Design</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="article">
+                <h2>Welcome to Our Blog</h2>
+                <p>This is the very first blog post that introduces readers to the site. It gives an overview of the blog's purpose.</p>
+                <a class="read-btn" href="#">Continue Reading</a>
+            </div>
+
+            <div class="article">
+                <h2>Creative Thinking in Coding</h2>
+                <p>In this article, we explore how creativity is essential in solving problems with code, using real-world examples and tips.</p>
+                <a class="read-btn" href="#">Continue Reading</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Purple Vibes Blog
+    </footer>
+
+</body>
+</html>

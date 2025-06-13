@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Two Colored Boxes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .box {
+      width: 200px;
+      height: 100px;
+      margin: 15px;
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      line-height: 80px;
+    }
+
+    .red-box {
+      background-color: red;
+    }
+
+    .blue-box {
+      background-color: blue;
+    }
+
+    h1 {
+      color: darkblue;
+    }
+
+    .a {
+      font-size: 20px;
+      font-weight: bold;
+      color: green;
+    }
+
+    .b {
+      font-style: italic;
+      color: #444;
+    }
+
+    /* Border styles */
+    .solid {
+      border: 3px solid black;
+      background: lightgray;
+      color: black;
+    }
+
+    .dashed {
+      border: 3px dashed black;
+      background: lightblue;
+      color: black;
+    }
+
+    .dotted {
+      border: 3px dotted black;
+      background: lightgreen;
+      color: black;
+    }
+
+    .double {
+      border: 5px double black;
+      background: lightpink;
+      color: black;
+    }
+
+    .groove {
+      border: 5px groove black;
+      background: beige;
+      color: black;
+    }
+
+    .ridge {
+      border: 5px ridge black;
+      background: lightyellow;
+      color: black;
+    }
+
+    .inset {
+      border: 5px inset black;
+      background: lightcoral;
+      color: black;
+    }
+
+    .outset {
+      border: 5px outset black;
+      background: lightseagreen;
+      color: black;
+    }
+
+    .box1 {
+      background-color: green;
+      border: 3px solid black;
+    }
+
+    .box2 {
+      background-color: yellow;
+      color: black;
+      border: 3px dashed black;
+    }
+
+    /* Positioning */
+    .static-box {
+      position: static;
+      background: lightgray;
+      color: black;
+    }
+
+    .relative-box {
+      position: relative;
+      left: 20px;
+      background: orange;
+      color: black;
+    }
+
+    .absolute-container {
+      position: relative;
+      height: 120px;
+      border: 1px solid #ccc;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      background: purple;
+    }
+
+    .sticky-box {
+      position: sticky;
+      top: 0;
+      background: teal;
+      color: white;
+      z-index: 100;
+    }
+
+    .fixed-box {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background: black;
+      color: white;
+      width: 150px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      z-index: 200;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box red-box">Red Box</div>
+  <div class="box blue-box">Blue Box</div>
+
+  <h1>Hi! I am Loki</h1>
+  <p class="a">Good Morning......!</p>
+  <p class="b">This is font and text properties</p>
+
+  <div class="box solid">Solid Border</div>
+  <div class="box dashed">Dashed Border</div>
+  <div class="box dotted">Dotted Border</div>
+  <div class="box double">Double Border</div>
+  <div class="box groove">Groove Border</div>
+  <div class="box ridge">Ridge Border</div>
+  <div class="box inset">Inset Border</div>
+  <div class="box outset">Outset Border</div>
+
+  <div class="box box1">
+    This is Box 1<br>(green background, solid border)
+  </div>
+
+  <div class="box box2">
+    This is Box 2<br>(yellow background, dashed border)
+  </div>
+
+  <div class="box static-box">Static</div>
+
+  <div class="box relative-box">Relative</div>
+
+  <div class="absolute-container">
+    <div class="box absolute-box">Absolute</div>
+  </div>
+
+  <div class="box sticky-box">Sticky (Scroll me)</div>
+
+  <div class="box fixed-box">Fixed (Always here)</div>
+
+</body>
+</html>

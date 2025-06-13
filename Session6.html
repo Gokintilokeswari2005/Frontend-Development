@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Demo - Loki</title>
+
+  
+  <style>
+    div {
+      color: rgb(90, 139, 0);
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .name {
+      background: yellow;
+      text-align: center;
+    }
+
+    #header {
+      font-size: 24px;
+      background: chocolate;
+      text-align: center;
+    }
+
+    /* Universal selector */
+    * {
+      font-family: Arial, sans-serif;
+    }
+
+    h4, h5, h6 {
+      font-size: 20px;
+      background: brown;
+      text-align: center;
+      color: white;
+    }
+
+    div p {
+      font-size: 24px;
+      background: green;
+      text-align: center;
+    }
+
+    div > h3 {
+      background: blue;
+      text-align: center;
+      color: white;
+    }
+
+    h2 + p {
+      background: orange;
+      text-align: center;
+    }
+
+    h1 ~ p {
+      background: purple;
+      text-align: center;
+      color: white;
+    }
+
+    input:focus {
+      border: 2px solid blue;
+      outline: none;
+      background: navajowhite;
+    }
+
+    button:active {
+      background-color: darkblue;
+      color: white;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    p::first-line {
+      font-weight: bold;
+      color: red;
+    }
+
+    p::first-letter {
+      font-size: 200%;
+      color: blue;
+    }
+
+    p::after {
+      content: " ✨";
+      color: orange;
+    }
+
+    p::before {
+      content: " ";
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Inline CSS -->
+  <h1 style="color: red;">Hi! Inline CSS</h1>
+  <p style="color: green;">I'm Loki</p>
+
+  <!-- Internal CSS -->
+  <h2>I'm internal CSS</h2>
+  <p>Welcome</p>
+
+  <!-- External CSS reference (won't affect this without file) -->
+  <h1>I'm external CSS</h1>
+  <p>Welcome</p>
+
+  <!-- Parent and Child -->
+  <div>
+    This is a parent
+    <p>This is a child paragraph</p>
+  </div>
+
+  <!-- Class Selector -->
+  <h3>Class Selector</h3>
+  <div class="name">This is a class selector</div>
+
+  <!-- ID Selector -->
+  <h3>ID Selector</h3>
+  <h2 id="header">ID selector using hash operator</h2>
+
+  <!-- Universal Selector -->
+  <h3>Universal Selector</h3>
+  <div>This is affected by the universal selector (*)</div>
+
+  <!-- Group Selector -->
+  <div class="class">Group selector</div>
+  <h4>This is a group selector</h4>
+  <h5>Welcome</h5>
+  <h6>Hello</h6>
+
+  <!-- Combinator Selector -->
+  <h3>Combinator Selector</h3>
+  <div>
+    <p>This is a child of div (div > p)</p>
+  </div>
+
+  <!-- Child and Sibling -->
+  <h3>Child</h3>
+  <div>
+    <h4>Child class</h4>
+    <h3>I am a child class</h3>
+  </div>
+
+  <!-- Adjacent Sibling -->
+  <div>
+    <h2>Adjacent Sibling</h2>
+  </div>
+  <p>Siblings</p>
+
+  <!-- General Siblings -->
+  <div>
+    <h1>General Siblings</h1>
+  </div>
+  <p>Siblings</p>
+
+  <!-- Form Elements -->
+  <label>First name:</label>
+  <input type="text"><br><br>
+
+  <!-- Pseudo Classes -->
+  <h1>Pseudo Classes</h1>
+  <a href="#">I am a hover/visited pseudo-class.</a><br><br>
+  <input type="text" placeholder="Click to focus"><br><br>
+  <button>Click me!</button><br><br>
+
+  <!-- Pseudo Elements -->
+  <h1>Pseudo Elements</h1>
+  <p>
+    This is a sample paragraph to test CSS pseudo-elements. The first letter and first line should be styled.
+  </p>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form with Multimedia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .media-section {
+      max-width: 700px;
+      margin: 40px auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contact Us</h1>
+
+  <form action="#" method="post">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required pattern="[A-Za-z\s]{3,50}" title="Only letters allowed, min 3 characters">
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="Enter 10 digit mobile number">
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="website">Your Website:</label>
+    <input type="url" id="website" name="website" placeholder="https://example.com">
+
+    <label for="query">Your Query:</label>
+    <textarea id="query" name="query" rows="4" required></textarea>
+
+    <label for="category">Category:</label>
+    <select id="category" name="category" required>
+      <option value="">--Select--</option>
+      <option value="feedback">Feedback</option>
+      <option value="support">Support</option>
+      <option value="business">Business Inquiry</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Multimedia Section -->
+  <div class="media-section">
+    <h2>Watch Our Intro Video</h2>
+    <video width="320" height="240" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h2>Listen to Our Welcome Message</h2>
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h2>Find Us on the Map</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.295073210408!2d76.95476057480337!3d11.015247289153328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85c28a82689c5%3A0x984e67e087a4e091!2sPSG%20College%20of%20Technology!5e0!3m2!1sen!2sin!4v1686032142376!5m2!1sen!2sin" 
+      width="400" 
+      height="300" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+</body>
+</html>
