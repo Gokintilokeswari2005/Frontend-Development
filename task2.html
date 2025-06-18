@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube 2025 Navbar with Sidebar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+    }
+    .sidebar {
+      width: 250px;
+      background: white;
+      padding: 12px;
+      height: 100vh;
+      border-right: 1px solid #ddd;
+      overflow-y: auto;
+    }
+    .sidebar-section {
+      margin-bottom: 20px;
+    }
+    .sidebar h4 {
+      margin: 10px 0;
+      font-weight: 500;
+    }
+    .sidebar-item {
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      border-radius: 10px;
+      cursor: pointer;
+      color: black;
+    }
+    .sidebar-item i {
+      width: 25px;
+      font-size: 18px;
+    }
+    .sidebar-item:hover, .sidebar-item.active {
+      background-color: #f2f2f2;
+    }
+    .dot {
+      height: 8px;
+      width: 8px;
+      background-color: blue;
+      border-radius: 50%;
+      margin-left: auto;
+    }
+    .live {
+      color: red;
+      font-size: 12px;
+      margin-left: auto;
+    }
+    .temp {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      background: #fff0f0;
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 14px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 16px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      width: 100%;
+    }
+    .nav-left, .nav-center, .nav-right {
+      display: flex;
+      align-items: center;
+    }
+    .nav-left i {
+      font-size: 22px;
+      margin-right: 12px;
+      cursor: pointer;
+    }
+    .youtube-logo img {
+      height: 24px;
+    }
+    .nav-center {
+      flex: 1;
+      justify-content: center;
+    }
+    .search-box {
+      display: flex;
+      max-width: 600px;
+      width: 100%;
+    }
+    .search-box input {
+      flex: 1;
+      padding: 8px 12px;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      border-right: none;
+      border-radius: 25px 0 0 25px;
+      outline: none;
+    }
+    .search-box button {
+      padding: 8px 16px;
+      background-color: #f8f8f8;
+      border: 1px solid #ccc;
+      border-left: none;
+      border-radius: 0 25px 25px 0;
+      cursor: pointer;
+    }
+    .mic-icon {
+      font-size: 18px;
+      color: #000;
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-radius: 50%;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .nav-right {
+      gap: 18px;
+    }
+    .create-btn {
+      background: #f2f2f2;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .notif {
+      position: relative;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .notif::after {
+      content: "9+";
+      position: absolute;
+      top: -5px;
+      right: -10px;
+      background: red;
+      color: white;
+      font-size: 10px;
+      padding: 2px 5px;
+      border-radius: 10px;
+    }
+    .profile {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #c2185b;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-item active"><i class="fas fa-home"></i> Home</div>
+      <div class="sidebar-item"><i class="fas fa-bolt"></i> Shorts</div>
+      <div class="sidebar-item"><i class="fas fa-tv"></i> Subscriptions <span class="dot"></span></div>
+    </div>
+    <div class="sidebar-section">
+      <h4>You</h4>
+      <div class="sidebar-item"><i class="fas fa-history"></i> History</div>
+      <div class="sidebar-item"><i class="fas fa-list"></i> Playlists</div>
+      <div class="sidebar-item"><i class="fas fa-video"></i> Your videos</div>
+      <div class="sidebar-item"><i class="fas fa-clock"></i> Watch Later</div>
+      <div class="sidebar-item"><i class="fas fa-thumbs-up"></i> Liked videos</div>
+    </div>
+    <div class="sidebar-section">
+      <h4>Subscriptions</h4>
+      <div class="sidebar-item"><img src="https://yt3.ggpht.com/ytc/APkrFKZjzA2HtvAsKwzLw=s40-c-k-c0x00ffffff-no-rj" width="20"> TV9 Telugu Live <span class="live">(●●)</span></div>
+      <div class="sidebar-item"><img src="https://yt3.ggpht.com/yti/AOXPAcWZlaJr=s40-c-k-c0x00ffffff-no-rj" width="20"> Siri Challa Official <span class="dot"></span></div>
+      <div class="sidebar-item"><img src="https://yt3.ggpht.com/yti/AGOGRCqFg=s40-c-k-c0x00ffffff-no-rj" width="20"> Mango Music <span class="dot"></span></div>
+      <div class="sidebar-item"><img src="https://yt3.ggpht.com/yti/AOXPAcFv=s40-c-k-c0x00ffffff-no-rj" width="20"> Vamsi Bhavani <span class="dot"></span></div>
+      <div class="sidebar-item"><img src="https://yt3.ggpht.com/yti/AGOGRCrrr=s40-c-k-c0x00ffffff-no-rj" width="20"> Parasuram Talkies</div>
+    </div>
+    <div class="temp"><i class="fas fa-cloud"></i> 30°C - Partly sunny</div>
+  </div>
+
+  <!-- Navbar -->
+  <div style="flex:1">
+    <div class="navbar">
+      <div class="nav-left">
+        <i class="fas fa-bars"></i>
+        <div class="youtube-logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo">
+        </div>
+      </div>
+      <div class="nav-center">
+        <div class="search-box">
+          <input type="text" placeholder="Search">
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <i class="fas fa-microphone mic-icon"></i>
+      </div>
+      <div class="nav-right">
+        <button class="create-btn"><i class="fas fa-plus"></i> Create</button>
+        <i class="fas fa-bell notif"></i>
+        <div class="profile">L</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
